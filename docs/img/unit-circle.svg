@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260" role="img" aria-labelledby="circle-title circle-desc">
+  <title id="circle-title">Единичная тригонометрическая окружность</title>
+  <desc id="circle-desc">Окружность радиуса 1 с центром в начале координат, углом альфа в первой четверти и проекциями синуса и косинуса на оси.</desc>
+
+  <!--Фон-->
+  <rect x="0" y="0" width="260" height="260" fill="#f8fafc" rx="8" />
+
+  <!--Координатные оси-->
+  <g id="axes" stroke="#64748b" stroke-width="1.5">
+    <line id="axis-x" x1="20" y1="130" x2="240" y2="130" />
+    <line id="axis-y" x1="130" y1="240" x2="130" y2="20" />
+    <!-- Стрелки осей -->
+    <polygon points="240,130 232,126 232,134" fill="#64748b" />
+    <polygon points="130,20 126,28 134,28" fill="#64748b" />
+  </g>
+
+  <!--Единичная окружность-->
+  <circle id="main-circle" cx="130" cy="130" r="80" fill="none" stroke="#2563eb" stroke-width="2" />
+
+  <!--Проекции cos и sin-->
+  <g id="projections" stroke-dasharray="4,3" stroke-width="1.5">
+    <!--Линия синуса-->
+    <line id="sin-line" x1="199.3" y1="90" x2="199.3" y2="130" stroke="#dc2626" />
+    <!--Линия косинуса-->
+    <line id="cos-line" x1="130" y1="130" x2="199.3" y2="130" stroke="#16a34a" stroke-width="3" stroke-dasharray="none" />
+  </g>
+
+  <!--Радиус-вектор-->
+  <line id="radius-vector" x1="130" y1="130" x2="199.3" y2="90" stroke="#1e293b" stroke-width="2.5" />
+
+  <!--Дуга угла альфа-->
+  <path id="angle-arc" d="M 155 130 A 25 25 0 0 0 151.6 117.5" fill="none" stroke="#d97706" stroke-width="2" />
+
+  <!--Точка на окружности-->
+  <circle id="point-p" cx="199.3" cy="90" r="4" fill="#dc2626" />
+
+  <!--Подписи-->
+  <g id="labels" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">
+    <text x="230" y="145">x</text>
+    <text x="138" y="28">y</text>
+    <text x="118" y="145">0</text>
+    <text x="158" y="124" fill="#d97706" font-weight="bold">α</text>
+    <text x="155" y="145" fill="#16a34a" font-weight="bold">cos α</text>
+    <text x="204" y="115" fill="#dc2626" font-weight="bold">sin α</text>
+    <text x="203" y="85" font-weight="bold">P(x; y)</text>
+  </g>
+</svg>
